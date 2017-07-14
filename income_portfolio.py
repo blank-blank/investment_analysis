@@ -12,7 +12,7 @@ portfolio = [('wmt', 4),
              ('xom', 30),
              ('ibm', 23),
              ('pfe', 2),
-	         ('vlo', 3)]
+	         ('vlo', 9)]
 
 def get_dividend_amount(symbol):
     '''
@@ -31,9 +31,14 @@ def get_dividend_amount(symbol):
     
     return amount
 
-total = 0
-for component in portfolio:
-    
-    total = total + (float(get_dividend_amount(component[0])) * component[1] * 4)
-    
-print 'Total yearly income: %s' %total
+#================================================================
+def main():
+    total = 0
+    for component in portfolio:
+        
+        total = total + (float(get_dividend_amount(component[0])) * component[1] * 4)
+
+    print 'Total yearly income: %s' %total
+
+if __name__ == '__main__':
+    main()
