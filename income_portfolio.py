@@ -3,16 +3,18 @@ from bs4 import BeautifulSoup
 
 
 
-portfolio = [('wmt', 4),
-             ('ko', 25),
-             ('cvx', 27),
-             ('ge', 25),
-             ('intc', 5),
-             ('t', 31),
-             ('xom', 30),
-             ('ibm', 23),
-             ('pfe', 2),
-	         ('vlo', 9)]
+portfolio = [
+             ('cvx', 27.501),
+             ('ge', 25.228),
+             ('ibm', 23.495),
+             ('intc', 5.031),
+             ('ko', 25.433),
+             ('pfe', 2.016),
+             ('t', 31.484),
+             ('vlo', 12.162),
+             ('wmt', 4.022), 
+             ('xom', 30.596) 
+            ]
 
 def get_dividend_amount(symbol):
     '''
