@@ -2,18 +2,30 @@ import urllib2
 from bs4 import BeautifulSoup
 
 
+import SimpleHTTPServer
+import SocketServer
+
+# PORT = 8000
+# 
+# Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+# 
+# httpd = SocketServer.TCPServer(("", PORT), Handler)
+# 
+# print "serving at port", PORT
+# httpd.serve_forever()
+# 
 
 portfolio = [
-             ('cvx', 27.769),
+             ('cvx', 28.03),
              ('ge', 25.523),
-             ('ibm', 23.797),
-             ('intc', 5.062),
+             ('ibm', 24.07),
+             ('intc', 5.09),
              ('ko', 25.636),
-             ('pfe', 2.031),
-             ('t', 31.999),
-             ('vlo', 12.294),
+             ('pfe', 2.048),
+             ('t', 66.547),
+             ('vlo', 12.43),
              ('wmt', 4.044), 
-             ('xom', 53.924) 
+             ('xom', 54.48) 
             ]
 
 def get_dividend_amount(symbol):
